@@ -1,2 +1,2 @@
 Course "Operational Systems"
-lab - 6
+lab - 7
