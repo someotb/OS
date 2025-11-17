@@ -3,10 +3,14 @@ if [ "$#" -gt 0 ]; then
     while getopts ":fm:" opt; do
         case $opt in
             f)
-                echo "Введите команду: "
-                read cmd
-                echo "Выполняю команду: $cmd"
-                eval "$cmd"
+                if [[ -z "$OPTARG" && "$#" -eq 1 ]]; then
+                    echo "Введите команду: "
+                    read cmd
+                    echo "Выполняю команду: $cmd"
+                    eval "$cmd"
+                else
+                    echo "-f не нужны аргументы"
+                fi
                 ;;
             m)
                 filename="$OPTARG"
