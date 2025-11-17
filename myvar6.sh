@@ -29,5 +29,5 @@ if [ "$#" -gt 0 ]; then
         esac
     done
 else
-    echo "Используйте аргументы"   
+    echo "Использование: $0 [-f] [-m filename]"   
 fi
