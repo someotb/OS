@@ -1,2 +1,0 @@
-Слово: Woaaaaaaaaaaaaaaaarld!\n");
-Количество 'a': 16
