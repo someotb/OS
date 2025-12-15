@@ -75,7 +75,7 @@ int main() {
 
         // создаём новый файл с результатом
         char out_name[MAX_FILENAME];
-        snprintf(out_name, MAX_FILENAME, "result_%s.txt", fname);
+        snprintf(out_name, MAX_FILENAME, "result_%s", fname);
 
         int out = open(out_name, O_WRONLY | O_CREAT | O_TRUNC, 0644);
         if (out < 0) {
